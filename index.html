@@ -1,87 +1,137 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<h1>Aarzoo Fashion Store</h1>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Aarzoo Fashion</title>
 
 <style>
+
 body{
-font-family: Arial;
 margin:0;
+font-family:Arial, Helvetica, sans-serif;
 background:#f4f4f4;
 }
 
 header{
 background:#0b6b4a;
 color:white;
-padding:15px;
 text-align:center;
+padding:30px;
 }
 
 nav{
-background:#333;
-padding:10px;
-text-align:center;
+background:#222;
+display:flex;
+justify-content:center;
 }
 
 nav a{
 color:white;
-margin:10px;
+padding:14px 20px;
 text-decoration:none;
-font-size:18px;
+font-weight:bold;
 }
 
-.container{
+nav a:hover{
+background:#0b6b4a;
+}
+
+.hero{
+height:400px;
+background-image:url("https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+font-size:40px;
+font-weight:bold;
+}
+
+.section-title{
+text-align:center;
+margin:40px;
+font-size:28px;
+}
+
+.products{
 display:flex;
 flex-wrap:wrap;
 justify-content:center;
-margin:20px;
+gap:30px;
+padding:20px;
 }
 
 .card{
 background:white;
-width:220px;
-margin:15px;
-border-radius:8px;
-box-shadow:0 0 10px rgba(0,0,0,0.2);
+width:260px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+overflow:hidden;
 text-align:center;
-padding:15px;
 }
 
 .card img{
 width:100%;
-border-radius:5px;
+height:260px;
+object-fit:cover;
 }
 
-button{
+.card h3{
+margin:10px;
+}
+
+.price{
+color:#0b6b4a;
+font-size:18px;
+font-weight:bold;
+}
+
+.btn{
 background:#0b6b4a;
 color:white;
 border:none;
-padding:10px 15px;
+padding:10px 20px;
+margin:10px;
 border-radius:5px;
 cursor:pointer;
 }
 
-button:hover{
-background:#09563b;
+.btn:hover{
+background:#09553b;
+}
+
+.about{
+padding:40px;
+text-align:center;
+background:white;
+}
+
+.contact{
+background:#0b6b4a;
+color:white;
+text-align:center;
+padding:30px;
 }
 
 footer{
-background:#222;
+background:#111;
 color:white;
 text-align:center;
-padding:10px;
-margin-top:20px;
+padding:15px;
 }
-</style>
 
+</style>
 </head>
 
 <body>
 
 <header>
-<h1>BD Panjabi & Pajama Store</h1>
-<p>Traditional Fashion for Bangladesh</p>
+<h1>Aarzoo Fashion</h1>
+<p>Premium Panjabi & Pajama Collection</p>
 </header>
 
 <nav>
@@ -91,33 +141,65 @@ margin-top:20px;
 <a href="#">Contact</a>
 </nav>
 
-<div class="container">
+<div class="hero">
+New Eid Collection
+</div>
+
+<h2 class="section-title">Featured Products</h2>
+
+<div class="products">
 
 <div class="card">
-<img src="https://i.imgur.com/6pKQ5Qp.jpg">
+<img src="https://images.unsplash.com/photo-1593032465171-8c5d4bde7e6a">
 <h3>Classic White Panjabi</h3>
-<p>Price: 950 BDT</p>
-<button>Order Now</button>
+<p class="price">950 BDT</p>
+<button class="btn">Order Now</button>
 </div>
 
 <div class="card">
-<img src="https://i.imgur.com/vh3W0Kx.jpg">
+<img src="https://images.unsplash.com/photo-1618354691438-25bc04584c23">
 <h3>Black Designer Panjabi</h3>
-<p>Price: 1200 BDT</p>
-<button>Order Now</button>
+<p class="price">1200 BDT</p>
+<button class="btn">Order Now</button>
 </div>
 
 <div class="card">
-<img src="https://i.imgur.com/LQm7T9R.jpg">
+<img src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10">
 <h3>Comfort Pajama</h3>
-<p>Price: 450 BDT</p>
-<button>Order Now</button>
+<p class="price">450 BDT</p>
+<button class="btn">Order Now</button>
 </div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1618354691438-25bc04584c23">
+<h3>Premium Silk Panjabi</h3>
+<p class="price">1500 BDT</p>
+<button class="btn">Order Now</button>
+</div>
+
+</div>
+
+<div class="about">
+<h2>About Us</h2>
+<p>
+Aarzoo Fashion brings modern and traditional Bangladeshi clothing together.
+Our Panjabi and Pajama collections are designed for comfort, elegance,
+and cultural pride.
+</p>
+</div>
+
+<div class="contact">
+<h2>Order via WhatsApp</h2>
+<p>Click below to place your order</p>
+
+<a href="https://wa.me/880000000000">
+<button class="btn">Order on WhatsApp</button>
+</a>
 
 </div>
 
 <footer>
-<p>© 2026 BD Panjabi Store | Bangladesh</p>
+© 2026 Aarzoo Fashion | Bangladesh
 </footer>
 
 </body>
