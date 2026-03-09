@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BD Panjabi Store</title>
+
+<style>
+body{
+font-family: Arial;
+margin:0;
+background:#f4f4f4;
+}
+
+header{
+background:#0b6b4a;
+color:white;
+padding:15px;
+text-align:center;
+}
+
+nav{
+background:#333;
+padding:10px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:10px;
+text-decoration:none;
+font-size:18px;
+}
+
+.container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+margin:20px;
+}
+
+.card{
+background:white;
+width:220px;
+margin:15px;
+border-radius:8px;
+box-shadow:0 0 10px rgba(0,0,0,0.2);
+text-align:center;
+padding:15px;
+}
+
+.card img{
+width:100%;
+border-radius:5px;
+}
+
+button{
+background:#0b6b4a;
+color:white;
+border:none;
+padding:10px 15px;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#09563b;
+}
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:10px;
+margin-top:20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>BD Panjabi & Pajama Store</h1>
+<p>Traditional Fashion for Bangladesh</p>
+</header>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Panjabi</a>
+<a href="#">Pajama</a>
+<a href="#">Contact</a>
+</nav>
+
+<div class="container">
+
+<div class="card">
+<img src="https://i.imgur.com/6pKQ5Qp.jpg">
+<h3>Classic White Panjabi</h3>
+<p>Price: 950 BDT</p>
+<button>Order Now</button>
+</div>
+
+<div class="card">
+<img src="https://i.imgur.com/vh3W0Kx.jpg">
+<h3>Black Designer Panjabi</h3>
+<p>Price: 1200 BDT</p>
+<button>Order Now</button>
+</div>
+
+<div class="card">
+<img src="https://i.imgur.com/LQm7T9R.jpg">
+<h3>Comfort Pajama</h3>
+<p>Price: 450 BDT</p>
+<button>Order Now</button>
+</div>
+
+</div>
+
+<footer>
+<p>© 2026 BD Panjabi Store | Bangladesh</p>
+</footer>
+
+</body>
+</html>
